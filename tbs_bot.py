@@ -4,9 +4,11 @@ import os
 import re
 
 # === TWOJE DANE ===
+import os
+
 BOTS = [
-    {"token": "8049749392:AAEVf-c06Xnib9TtV2TaULRXuwUvmVN2OQY", "chat_id": "7138406243"},
-    {"token": "7638664258:AAFLufYyPenu3NuSRKpPvzPX_1KHzCiUxV0", "chat_id": "6206540245"}
+    {"token": os.getenv("BOT1_TOKEN"), "chat_id": os.getenv("CHAT_ID1")},
+    {"token": os.getenv("BOT2_TOKEN"), "chat_id": os.getenv("CHAT_ID2")}
 ]
 
 def send_telegram_message(text):
