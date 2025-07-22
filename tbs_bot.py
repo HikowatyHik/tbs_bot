@@ -4,12 +4,17 @@ import os
 import re
 
 # === TWOJE DANE ===
-import os
-
 BOTS = [
     {"token": os.getenv("BOT1_TOKEN"), "chat_id": os.getenv("CHAT_ID1")},
     {"token": os.getenv("BOT2_TOKEN"), "chat_id": os.getenv("CHAT_ID2")}
+
 ]
+
+for bot in BOTS:
+    if not bot["token"] or not bot["chat_id"]:
+        print("Brak ustawionych tokenów lub chat_id w zmiennych środowiskowych!")
+        exit(1)
+
 
 def send_telegram_message(text):
     for bot in BOTS:
