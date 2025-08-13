@@ -6,8 +6,8 @@ import re
 # === TWOJE DANE ===
 BOTS = [
     {"token": os.getenv("BOT1_TOKEN"), "chat_id": os.getenv("CHAT_ID1")},
-    {"token": os.getenv("BOT2_TOKEN"), "chat_id": os.getenv("CHAT_ID2")}
-
+    {"token": os.getenv("BOT2_TOKEN"), "chat_id": os.getenv("CHAT_ID2")},
+    {"token": os.getenv("BOT3_TOKEN"), "chat_id": os.getenv("CHAT_ID3")}
 ]
 
 for bot in BOTS:
