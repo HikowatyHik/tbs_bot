@@ -29,5 +29,7 @@ jobs:
           BOT2_TOKEN: ${{ secrets.BOT2_TOKEN }}
           CHAT_ID1: ${{ secrets.CHAT_ID1 }}
           CHAT_ID2: ${{ secrets.CHAT_ID2 }}
+          BOT3_TOKEN: ${{ secrets.BOT3_TOKEN }}
+          CHAT_ID3: ${{ secrets.CHAT_ID3 }}
         run: python tbs_bot.py
 
